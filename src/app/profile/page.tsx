@@ -75,13 +75,13 @@ export default function ProfilePage() {
             className="mt-8 text-2xl font-bold w-1/2"
             style={{ whiteSpace: "pre-line" }}
           >
-            {result.substring(0, result.indexOf("."))}
+            {result.substring(0, result?.indexOf("."))}
           </div>
           <div
             className="mt-8 text-xl w-1/2"
             style={{ whiteSpace: "pre-line" }}
           >
-            {result.substring(result.indexOf(".") + 1, result.length)}
+            {result.substring(result?.indexOf(".") + 1, result.length)}
           </div>
         </>
       ) : (

@@ -130,10 +130,10 @@ export default function Home() {
               className="mt-8 text-2xl font-bold"
               style={{ whiteSpace: "pre-line" }}
             >
-              {result.substring(0, result.indexOf("."))}
+              {result.substring(0, result?.indexOf("."))}
             </div>
             <div className="mt-8 text-xl" style={{ whiteSpace: "pre-line" }}>
-              {result.substring(result.indexOf(".") + 1, result.length)}
+              {result.substring(result?.indexOf(".") + 1, result.length)}
             </div>
             <a href="/profile" className="w-full">
               <button className="w-full md:w-1/2 mt-8 px-3 py-2 bg-[#54273c] text-white rounded-lg">
